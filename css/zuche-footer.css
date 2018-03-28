@@ -1,0 +1,39 @@
+/*页面尾部*/
+#foot{
+	background:#241F43;
+	width:100%;
+	height:300px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin-top:30px;
+	padding-top:30px;
+}
+/*尾部列表*/
+div.foot-list{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-top:20px;
+	margin-bottom:20px;
+}
+div.foot-list ul:nth-child(2),div.foot-list ul:nth-child(3){
+	margin:0 60px;
+}
+div.foot-list ul li a{
+	font:16px "微软雅黑";
+	
+}
+/*版权*/
+div.foot_last{
+	width:100%;
+	background:#131010;
+	text-align:center;
+	line-height:20px;
+}
+div.foot_last>p:first-child{
+	margin-top:20px;
+}
+#foot div:nth-child(3)>img{
+	width:200px;
+}

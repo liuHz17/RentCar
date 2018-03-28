@@ -1,0 +1,13 @@
+div{float:left; height: 100px; line-height: 100px; }
+	#d1,#d3{ background-color: #ccff00; }
+	#d2{ cursor: pointer; background-color: #ffcc00; }
+	#p1{/*起始样式+transition*/
+	  width:64px;
+	  overflow:hidden;/*有文字内容时考虑溢出问题*/
+	  transition:all .5s linear;
+	}
+	#d3{/*起始样式+transition*/
+	  width:100px;
+	  overflow:hidden;/*有文字内容时考虑溢出问题*/
+	  transition:all .5s linear;
+	}

@@ -1,0 +1,137 @@
+/*品牌展示*/
+#brand_box{
+    margin-top:20px;
+    position: relative;
+}
+
+/*品牌切换*/
+#brand_box .brand_toggle{
+    border-bottom: 3px solid #000;
+    height:30px;
+    position:relative;
+}
+.brand_toggle>ul{
+    background-color: #fff;
+    padding:0 30px;
+    position:absolute;
+    top:15px;
+    left:420px;
+}
+.brand_toggle li{
+    float:left;
+    width:80px;
+    height:30px;
+    margin:0 10px;
+    text-align: center;
+    line-height:30px;
+    position:relative;
+}
+.brand_toggle li a{
+    font-size:14px;
+    color:#000;
+}
+.brand_toggle li.active{
+    background-color: #000;
+}
+.brand_toggle li.active a{
+    color:#fff;
+}
+.brand_toggle li.active i{
+    background-color: #fff;
+    border-right:10px solid transparent;
+    border-left:10px solid transparent;
+    border-top:10px solid #000;
+    position:absolute;
+    top:30px;
+    left:30px;
+}
+/*品牌列表*/
+.brand_list{
+    padding:0 10px;
+    /*height:180px;*/
+    /*overflow: hidden;*/
+}
+/*左：品牌logo*/
+.brand_list .brand_logo{
+    width:960px;
+    /*position: absolute;*/
+}
+.brand_logo li{
+    float:left;
+    width:170px;
+    height:120px;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    margin:20px 20px 0 0;
+}
+.brand_logo li span{
+    display:block;
+    border-top:1px solid #ddd;
+    height:37px;
+    line-height:37px;
+    font-size:14px;
+}
+
+/*右：滑动广告*/
+.brand_ad{
+    margin-top:20px;
+    height:280px;
+    width:219px;
+    overflow:hidden;
+    position:relative;
+    text-align: center;
+}
+.brand_ad_img{
+    position:absolute;
+    top: 0;  left: 0;
+}
+.brand_ad_img li{
+    width:219px;
+    height:280px;
+    float:left;
+}
+.brand_ad_index{
+    position:absolute;
+    bottom:10px;
+    left:50px;
+    width:100px;
+    height:20px;
+    background:rgba(255,255,255,.8);
+    border-radius: 20px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.brand_ad_index li{
+    float:left;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: #999;
+    margin:0 5px;
+}
+.brand_ad_index li.hover{
+    background:#DF115E;
+}
+/*按钮*/
+#brand_box>a{
+    position:absolute;
+    top:45%;
+    width:30px;
+    height:50px;
+    background:url("../img/bg_img.png");
+    text-align: center;
+    font-size: 30px;
+    color:#fff;
+    display:none;
+    font-weight: bold;
+}
+#brand_box> .prev{
+    left:0;
+}
+#brand_box>.next{
+    right:0;
+}
+#brand_box:hover>a{
+    display:block;
+}

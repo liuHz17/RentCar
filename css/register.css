@@ -1,0 +1,21 @@
+.register{
+	width:100%;
+	height:350px;
+	background: url(../img/products/bx.jpg) 0 center no-repeat;
+	font-size:16px;
+	color:#ddd;
+}
+.regcont{
+	width:500px;
+	border:1px solid black;
+	
+	padding: 0 38px 18px;
+}
+.reg-p{
+	font-size:20px;
+	color:#ddd;
+	margin:20px 100px;
+}
+.reg-p>span{
+	margin-left:50px;
+}

@@ -1,0 +1,42 @@
+div.shopping-cart>div.title{
+  display:flex;
+  justify-content:space-between;
+}
+.shopping-cart div.title b{
+  font-size:18px;
+  color:#666;
+}
+.shopping-cart div.title span{
+  color:red;
+  font-size:16px;
+  font-weight:bold;
+}
+.shopping-cart div.title span.count{
+  font-size:14px;
+}
+#box div.top{
+  /*高度，上边框，行高，背景色，阴影，文本颜色*/
+  height:36px;
+  border-top:1px solid #bbb;
+  line-height:36px;
+  background:linear-gradient(to bottom,#F4F3F4,#e6e6e6);
+  box-shadow:3px 3px 6px #ccc;
+  margin:10px 0;
+  color:#808080;
+  text-align:center;
+  /*弹性布局*/
+  display:flex;
+}
+.check-top{width:62px;}
+.product-top{width:380px;}
+.price-top{width:142px;}
+.num-top{width:140px;}
+.total-top{width:120px;}
+.oper-top{width:116px;}
+
+#area{
+		width:250px;height:80px;
+		text-align:center;line-height:80px;
+		font-size:1.5em;border:2px solid red;
+		cursor:pointer;background:yellow;
+	}

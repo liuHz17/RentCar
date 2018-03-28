@@ -1,0 +1,60 @@
+div.news{
+	width:100%;
+	/* border:1px solid red; */	
+	/* background:#000; */
+}
+#list{
+	background:#fff;
+	 list-style: none;
+	 width:100%;
+	 display:flex;
+	 flex-wrap:wrap;
+}
+/* #list li{
+	float:left;
+	margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 30%;
+} */
+#list>li.list-item img{
+	width:480px;
+	margin:10px;
+}
+#list>li.list-item img:hover{
+	/* transform:scale(1.1,1.1); */
+	border-radius:10px;
+}
+
+li.list-item{
+	/* border: 1px solid #eee; */
+	border-radius: 6px;
+	padding: 10px;
+	/* background:rgba(36,31,67,1); */
+	color:#000;
+	transition: all .5s linear;
+	margin-bottom:10px;
+	position:relative;
+}
+li.list-item.hover {
+	border: 1px solid #aaa;
+	box-shadow: 0 0 1px #aaa;
+	background:rgba(36,31,67,0.1);
+	
+	/* color:#fff; */
+	}
+.myOpacity{
+	opacity:0.4;
+	filter:alpha(opacity=40); /* 针对 IE8 以及更早的版本 */		
+	}
+
+/* li.list-item div.fav-state{
+	position:absolute;
+} */
+/*按钮显示更多*/
+.showMore{
+	margin:50px;
+	width:160px;
+	height:50px;
+	background: linear-gradient(to bottom,#e76b6b,#be9519);
+}

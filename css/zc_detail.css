@@ -1,0 +1,255 @@
+.selection{
+ /* margin:10px 100px;
+ width:100%; */
+     margin: 0px auto;
+    /* width: 100%; */
+    background: #666;
+}
+.top-select{
+	/* margin-left:150px; */
+	display: block;
+	/* background:#fff;
+	    margin-top:10px; */
+	    background: #fff;
+    margin: 5px 100px;
+	width:1000px;
+	height:250px;
+	/* border: 1px solid black; */
+}
+div.top-select fieldset{
+    border: 1px solid #ccc;
+    float: left;
+    height: 70px;
+	width: 446px;
+    margin: 18px 10px;
+    position: relative;
+}
+div.top-select fieldset.getCar{
+    width: 446px;
+    position: relative; /*相对定位 */
+}
+/* 去选车折线 */
+div.top-select .goSelect1{
+	width:200px;
+	height:150px;
+	border: 1px solid red;
+	border-left:1px solid #fff;
+	position:relative;
+	top:50px;
+	left:960px;
+}
+/* 去选车字体设置 */
+div.selection p.goSelect2{
+	font:normal bold 20px "微软雅黑";
+	color:white;
+    background: red;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    left: 1200px;
+    top: -150px;
+}
+/* 筛选条件-价格 */
+.carInfo{
+	width:100%;
+	display:flex;
+	flex-warp:wrap;
+	/* justify-content:flex-start; */
+	justify-content:space-between;
+	margin-top:20px;
+}
+.carInfoLeft{
+	width:350px;
+	height:500px;
+}
+.carInfoPrice,.carInfoBrand{
+	background: #996;
+	margin-bottom:20px;
+	list-style: none;
+    padding: 16px 36px;
+}
+ul.carInfoPrice>li:first-child{
+	font-size:20px;
+}
+ul.carInfoBrand>li:first-child{
+	font-size:24px;
+}
+ul.carInfoPrice>li:not(:first-child){
+	padding-left:50px;
+	font-size:14px;
+}
+ul.carInfoPrice>li:not(:first-child):hover{
+	color:red;
+}
+/* ul.carInfoBrand>li:not(:first-child){
+	padding-left:50px;
+} 使用动画hover或者点击时居中*/
+
+div.carInfoRight{
+	/* width:1000px; */
+	border:1px solid black;
+	width:1500px;
+	margin-left:20px;
+	padding-top:10px;
+	padding-right:50px;
+	display:flex;
+	justify-content:around;
+	flex-warp:wrap;
+	}
+div.carInfoRight>ul>li{
+	margin:10px 20px;
+	display:inline-block;
+	width:300px;
+	height:400px;
+	background:#F0F1F2;
+	padding-top:20px;
+	padding: 14px 36px;
+	}
+div.carInfoRight>ul>li:hover{
+	border:1px solid #624DC9;
+}
+div.carInfoRight>ul>li img:hover{
+	transform:scale(1.1,1.1);
+}
+div.carInfoRight>ul>li img{
+	width:300px;
+	margin:10px;
+}
+
+div.carInfoRight ul li h3,.carInfoRight ul li p{
+	padding-bottom:5px;
+} 
+/* 满租 */
+.carInfoRight ul li div.carState div.state{
+	width:250px;
+	height:70px;
+	font-size:20px;
+	font-weight:bold;
+	border:3px solid #666;
+	text-align:center;
+	line-height:70px;
+	color:red;
+	margin-top:10px;
+}
+
+#cart{
+	margin-top:20px;
+}
+#cart p.title{
+	padding:0 10px;
+	display:flex;
+	justify-content:space-between;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	background:linear-gradient(to bottom,#efefef,#e0e0e0);
+}
+#cart div.cart-result{
+	/*高度，行高，背景，上边框，左内边距*/
+	height:45px;
+	line-height:45px;
+	background:#808080;
+	border-top:1px dashed #d0d0d0;
+	padding-left:10px;
+	/*弹性布局，两端对齐*/
+	display:flex;
+	justify-content:space-between;
+}
+#cart div.cart-result span{
+	font-size:16px;
+	color:#fff;
+}
+#cart div.cart-result a{
+	width:30%;
+	font-size:16px;
+	color:#fff;
+	text-align:center;
+	background:linear-gradient(to bottom,#27b1f6,#0aa1ed);
+}
+
+#cart div.cart-content{
+	background:#fff;
+}
+
+
+#cart div.item{
+	/*上边框，弹性布局，两端对齐，上下左右内边距*/
+	border-top:1px dashed #d0d0d0;
+	display:flex;
+	justify-content:space-between;
+	padding:10px;
+}
+
+#cart div.item>span{
+	width:65px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#cart div.item>div span{
+	/*行内块，宽度，高度，渐变背景，文本颜色，文字大小，水平居中，行高*/
+	display:inline-block;
+	width:14px;
+	height:14px;
+	background:linear-gradient(to bottom,#efefef,#e1e1e1);
+	color:#fff;
+	text-align:center;
+	line-height:14px;
+}
+#cart div.item>div input{
+	/*宽度，高度，取消边框，取消轮廓，文本水平居中对齐*/
+	width:14px;
+	height:14px;
+	border:none;
+	outline:none;
+	text-align:center;
+}
+/*jia ru 购物车*/
+#show-list>li>div>input{
+    width:25px;
+    height:24px;
+    box-sizing:border-box;
+    border:none;
+    text-align:center;
+    outline:none;
+    margin:0 3px;
+    position:relative;
+    bottom:4px;
+}
+#show-list>li>div.carState input{
+	width:100px;
+}
+#show-list>li>div.carState a.addCart{
+	background: linear-gradient(to bottom,#e76b6b,#be9519);
+    border-radius: 3px;
+	color:white;
+    font-size: 18px;
+    display: inline-block;
+    padding: 3px;
+}
+/* 分页- */
+#pages{
+    padding:0px 20px;
+    text-align:right;
+    /* background:linear-gradient(to top , #f5f4f5,#e6e6e5); */
+    height:40px;
+    line-height:40px;
+}
+#pages a{
+    padding:4px 10px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    color:#0aa1ed;
+}
+#pages a.current{
+    border-color:#0aa1ed;
+    background:red;
+    color:#fff;
+}
+#pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}
