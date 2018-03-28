@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/zuche-footer.css">
+  </head>
+  <body>
+    <div class="main">
+      <!-- 1、头部 ：#header -->
+ <!--  <iframe src="zuche-header.html" frameborder="0" id="header"></iframe> -->
+	<header id="header">
+    </header>
+      <!-- 2、购物车 ：#shopping-cart -->
+      <div class="shopping-cart">
+        <!-- 2.1 标题行 -->
+        <div class="title">
+          <b>购物车</b>
+          <p>
+            已选
+            <span class="count">0</span>
+            件商品&nbsp;&nbsp;&nbsp;&nbsp;
+            合计(不含运费)：
+            <span class="totalPrice">0.00</span>
+            <span>元</span>
+          </p>
+        </div>
+        <!-- 2.2 内容块 -->
+        <div id="box">
+          <!-- 1、内容顶部 - 标题 -->
+          <div class="top">
+            <!-- 1、全选：62px -->
+            <div class="check-top">
+              <img src="img/header/product_normal.png">
+              全选
+            </div>
+            <!-- 2、商品：380px -->
+            <div class="product-top">商品</div>
+            <!-- 3、单价：142px -->
+            <div class="price-top">单价(元)</div>
+            <!-- 4、数量：140px -->
+            <div class="num-top">数量</div>
+            <!-- 5、金额：120px -->
+            <div class="total-top">金额</div>
+            <!-- 6、操作：116px -->
+            <div class="oper-top">操作</div>
+          </div>
+          <!-- 2、购物车内容 -->
+          <!-- 3、内容底部 - 结算 -->
+        </div>
+      </div>
+      <!-- 3、底部 ：#footer -->
+  <!--  <iframe src="zuche-footer7.html" frameborder="0" id="tfoot"></iframe>-->
+    <div id="area" onmouseout="out(this)" onmouseover="over(this)"></div>
+	<footer id="footer"></footer>
+	</div>
+
+	
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/zc_header.js"></script>
+	<script>
+	function over(div){
+		div.style.background="yellow";
+		div.innerHTML="";
+	}
+	function out(div){
+		div.style.background="#fff";
+		var r=Math.random();
+		div.innerHTML=
+		r<0.001?"一等奖：新用户租车免租2日":
+		r<0.01?"二等奖：海尔冰箱":
+		r<0.1?"三等奖：水杯":
+		"参与奖：抽纸一包";
+	}
+	</script>
+	<script src="js/zc_footer.js"></script>
+  </body>
+</html>

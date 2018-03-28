@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>车型列表页
+  
+  </title>
+  <style></style>
+  <!--  <link rel="stylesheet" href="css/zuche-banner.css">
+   <link rel="stylesheet" href="css/zc_banner.css">-->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/zc_detail.css">
+ </head>
+ <body>
+  
+ <div class="main">
+ <header id="header">
+      <img src="img/header/loading.gif" alt="加载中..." >
+    </header>
+  <!-- 选车 -->
+		<div class="selection">
+		 <!-- 左侧 -->
+			<div class="top-select">
+				<!-- 取车 -->
+					<fieldset class="getCar">
+						<legend>
+							<font>
+								<font>取车</font>
+							</font>
+						</legend>
+						<p id="getcarCity">
+							<select name="citySel" id="citySel1">
+									<option value="4" selected>--请选择取车门店--</option>
+									<option value="0">北京市丰台区北京南站店</option>
+									<option value="1">北京市朝阳区万青店</option>
+									<option value="2">北京市昌平区汽车北站店</option>
+									<option value="3">北京市大兴区大陆店</option>
+							</select>
+						</p>
+						<label class="carlabel">
+							<input type="checkbox" id="getCarDelivery">
+							<i></i>
+							<font>送车上门</font>
+						</label>
+					<!-- 选取选车城市 -->
+					<div class="showCarCity hide" status="false" >
+						 <!-- 选城市 -->
+						 <div></div>
+						 <!-- 选门店 -->
+						 <div></div>
+					</div>
+					</fieldset>
+				<!--还车 -->
+					<fieldset class="getCar">
+							<legend>
+								<font>
+									<font>还车</font>
+								</font>
+							</legend>
+							<p id="getcarCity">
+								<!-- <font>
+									<font>北京市丰台区北京南站店</font>
+								</font> -->
+								<select name="citySel" id="citySel2">
+									<option value="4" selected>--请选择还车门店--</option>
+									<option value="0">北京市丰台区北京南站店</option>
+									<option value="1">北京市朝阳区万青店</option>
+									<option value="2">北京市昌平区汽车北站店</option>
+									<option value="3">北京市大兴区大陆店</option>
+								</select>
+							</p>
+							<label class="carlabel">
+								<input type="checkbox" id="getCarDelivery">
+								<i></i>
+								<font>送车上门</font>
+							</label>
+						<!-- 选取选车城市 -->
+						<div class="showCarCity hide">
+							 <!-- 选城市 -->
+							 <div></div>
+							 <!-- 选门店 -->
+							 <div></div>
+						</div>
+					</fieldset>
+				<!-- 取车时间未写 -->
+					<fieldset>
+						<legend>
+							<font>
+								<font>取车时间</font>
+							</font>
+						</legend>
+						<label>选择取车日期</label>
+                        <input type="date" required>
+					</fieldset>
+					<fieldset>
+						<legend>
+						    <font>
+								<font>还车时间</font>
+							</font>
+						</legend>
+						<label>选择还车日期</label>
+                        <input type="date" required>
+					</fieldset>
+				<!--去 -->
+				  <div class="goSelect1"></div>				
+			</div>
+			<p class="goSelect2">去选车</p>
+		</div>
+	<!-- 主体内容 -->
+	<div class="carInfo">
+	<!-- left -->			 
+		<div class="carInfoLeft">
+			<!-- 价格 -->
+			<ul class="carInfoPrice">
+				<li>价格</li>
+				<li><a href="#">不限</a></li>
+				<li><a href="#">0-150</a></li>
+				<li><a href="#">150-300</a></li>
+				<li><a href="#">300-500</a></li>
+				<li><a href="#">500+</a></li>
+			</ul>		
+			<!-- 品牌 -->
+			<ul class="carInfoBrand">
+				<li><a href="#">品牌</a></li>	
+				<li><a href="#">不限</a></li>
+				<li><a href="#">奥迪</a></li>
+				<li><a href="#">宝马</a></li>
+				<li><a href="#">奔驰</a></li>
+				<li><a href="#">本田</a></li>
+			</ul>
+			<div id="cart">
+			  <!-- 1、购物车标题 -->
+				<p class="title">
+					<span>购物车</span>
+					<a href="#">清空</a>
+				</p>           
+			  <div class="cart_content">
+				<!-- 1、内容1 -->
+				<!--<div class="item">
+				  <span>联想(ThinkPad)轻薄系列E470c(20H3A003CD)14英寸笔记本电脑(i5-6200U 8G 1T 2G独显 Win10)黑色</span>
+				  <div>
+					<span class="reduce">-</span>
+					<input type="text" value="1">
+					<span class="add">+</span>
+				  </div>
+				  <p>
+					<span>￥5499.00</span>	
+				  </p>
+				</div>-->
+			  </div>
+              <!-- 3、购物车结算 -->
+			  <div class="cart-result">
+				<span>
+				  <img src="img/footer/foodstore_car_2.png">
+				  ¥<span class="result" id="total">0.00</span>	
+				</span>
+				<a href="#">去结算</a>
+			  </div>
+			</div>
+		</div>
+		<!-- 购物车部分 -->
+		 
+
+    <!--  right-->	
+		<div class="carInfoRight">
+			<ul id="show-list">
+				<li >
+					<h3>${p.title}</h3>
+					<p><span>${p.boxes}</span><span>${p.spec}</span><span>乘坐${p.capacity}人</span></p>
+					<img src="img/products/sm/aodi_A6.png" alt="">
+					<hr>
+					<div class="carState">
+						<div>日租价</div><span>￥${p.price}</span>
+						<div>总租金</div><span>￥${p.price*2}</span>
+						<div>
+							  <span class="reduce">-</span>
+							  <input type="text" value="1">
+							  <span class="add">+</span>
+							  <a href="javascript:;" class="addCart">加入购物车</a>
+					     </div>
+						<div class="state">${p.is_hire}</div>
+					</div>
+					
+				</li>
+				
+			</ul>
+		</div>			
+	</div>
+	<!-- 页码 -->
+	<div id="pages">
+	  <a href="javascript:;" class="previous disabled">上一页</a>
+	  <a href="javascript:;" class="current">1</a>
+	  <a href="javascript:;">2</a>
+	  <a href="javascript:;" class="next">下一页</a>
+	</div>
+	<!-- <footer id="footer">
+	      <img src="img/loading.gif" class="loading">
+	    </footer>	 -->
+ </div>
+ <div class="footer">
+  <div class="loading">
+    <img src="img/header/loading.gif" alt="加载中..." >
+  </div>
+</div>
+ <script src="js/jquery-3.2.0.js"></script>
+ <!-- <script src="js/jquery.page.js"></script> -->
+ 	<script src="js/zc_header.js"></script>
+ <script src="js/base.js"></script>
+  <script src="js/products.js"></script> 
+ </body>
+</html>
