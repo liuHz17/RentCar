@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/header.css"/>
+  <link rel="stylesheet" href="css/news.css"/>
+  <style>
+    
+  </style>
+</head>
+<body>
+<div class="main container">
+	<header id="header">
+	</header>
+	<div class="news">
+		<ul id="list">
+		  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news.jpg" >			
+					<div ></div>
+					</a>
+					<div class="img-cover closed" >
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+		  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news1.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+		  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+			<li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+			  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news1.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+			  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+		  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news1.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+			  <li class="list-item">
+					<a href="" class="closed">
+						<img class="fav-img" src="img/news/news2.jpg" >			
+					<div class="img-cover"></div>
+					</a>
+					<div class="fav-state closed">
+						<h3 class="fav-title">记录你的旅行故事，赢取千元租车好礼</h3>
+						<p class="fav-con">一键生成你的旅行长图</p>
+					</div>
+			  </li>
+					 
+		</ul>
+	</div>
+	<!-- <div id="trans"></div> -->
+	<button data-toggle="brandlist" class="showMore">显示最新活动</button>
+
+	<footer id="footer">
+	</footer>
+</div>
+<script src="js/jquery-3.2.0.js"></script>
+
+<!--  <script src="js/jquery-1.11.3.js"></script>-->
+<script>
+  //为data-toggle="brandlist"绑定单击事件:
+	$("[data-toggle=brandlist]").click(e=>{
+    //如果ul#list下有隐藏的元素，就显示全部
+		if($("ul#list").is(":has(:hidden)")){
+      //改当前按钮内容为"显示最新活动"
+			$("ul#list>li").show();
+			$(e.target).html("显示最新活动");
+    }else{//否则,隐藏最后一个元素之外的剩余元素
+			$("ul#list>li:gt(4):not(:last)").hide()
+			//顺便改当前按钮内容为"显示所有活动"
+			$(e.target).html("显示所有活动");
+		}
+	})
+  $('.list-item').mouseover(
+			function(){//mouseenter
+				var $listItem=$(this);
+				$listItem.toggleClass("hover")
+				.siblings().addClass('myOpacity')
+			}		
+  )
+  $('.list-item').mouseout(
+			function(){//mouseenter
+				var $listItem=$(this);
+				$listItem.siblings().removeClass('myOpacity')
+			}		
+  )
+</script>
+<script src="js/zc_header.js"></script>
+<script src="js/zc_footer.js"></script>
+</body>
+</html>
